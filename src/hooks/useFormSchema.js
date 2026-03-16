@@ -1,21 +1,16 @@
-import { z } from 'zod'
+import { z } from "zod";
 
 export const formSchema = z.object({
-  nome: z
+  nome: z.string().min(3, "Nome deve ter pelo menos 3 caracteres"),
+  email: z.string().email("E-mail inválido"),
+  cargo: z.string().min(2, "Informe seu cargo"),
+  celular: z
     .string()
-    .min(3, 'Nome deve ter pelo menos 3 caracteres')
-    .max(100, 'Nome muito longo')
-    .regex(/^[A-Za-zÀ-ÿ\s]+$/, 'Nome deve conter apenas letras'),
-
-  email: z
-    .string()
-    .min(1, 'E-mail é obrigatório')
-    .email('Insira um e-mail válido'),
-
-  telefone: z
-    .string()
-    .min(1, 'Telefone é obrigatório')
-    .min(10, 'Telefone deve ter pelo menos 10 dígitos')
-    .max(15, 'Telefone inválido')
-    .regex(/^[\d\s\(\)\-\+]+$/, 'Formato de telefone inválido'),
-})
+    .min(10, "Celular inválido")
+    .regex(/^[\d\s\(\)\-\+]+$/, "Formato inválido"),
+  cidade: z.string().min(2, "Informe sua cidade"),
+  cpf: z.string().regex(/^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$/, "CPF inválido"),
+  endereco: z.string().min(5, "Informe seu endereço"),
+  estadoCivil: z.string().min(1, "Selecione o estado civil"),
+  genero: z.string().min(1, "Selecione o gênero"),
+});

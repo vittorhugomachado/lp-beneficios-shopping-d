@@ -17,7 +17,7 @@ const stores = [
     benefit: [
       "Desconto de 15% em todos os produtos da loja, exceto itens promocionais",
     ],
-    details: "Promoção não cumulativa",
+    details: ["Promoção não cumulativa"],
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const stores = [
     benefit: [
       "Desconto de 15% exceto produtos promocionais (Óculos solar, Relógios, Armação e Lente de Grau)",
     ],
-    details: "Válido até 22/03/2025",
+    details: ["Válido até 22/03/2025"],
   },
   {
     id: 3,
@@ -39,9 +39,12 @@ const stores = [
     benefit: [
       "Promoção 1 - Prato Principal + sobremesa do dia + bebida não alcoólica por R$ 60,00 (Opções: Prato São Paulo, Filé de Frango ou Penne Espetacular)",
       "Promoção 2 - Na compra de um prato executivo, ganhe uma bebida não alcoólica",
+      "Válido de segunda a quinta das 11:30 às 16:00",
     ],
-    details:
+    details: [
       "Válido de segunda a quinta das 11h30 às 16h até 05/04/2025. Promoção não acumulativa",
+      "Promoção não cumulativa",
+    ],
   },
   {
     id: 4,
@@ -50,7 +53,7 @@ const stores = [
     color: "#C61D22",
     logo: "/images/lojas/kidstok.png",
     benefit: ["Desconto de 10% em todos os produtos da loja"],
-    details: "",
+    details: [],
   },
   {
     id: 5,
@@ -63,7 +66,7 @@ const stores = [
       "Desconto de 35% na compra da coleção vintage Team One",
       "Desconto de 25% na Lan House",
     ],
-    details: "",
+    details: [],
   },
   {
     id: 6,
@@ -72,7 +75,7 @@ const stores = [
     color: "#9A1519",
     logo: "/images/lojas/lupo.png",
     benefit: ["Desconto de 10% em todas as compras"],
-    details: "Desconto não cumulativo com outras promoções da loja",
+    details: ["Desconto não cumulativo com outras promoções da loja"],
   },
   {
     id: 7,
@@ -84,7 +87,7 @@ const stores = [
       "Desconto de 10% no buffet",
       "Compre um yakissoba a la carte e ganhe 01 harumaki doce ou 01 hot doce",
     ],
-    details: "",
+    details: [],
   },
   {
     id: 8,
@@ -93,7 +96,7 @@ const stores = [
     color: "#E8282E",
     logo: "/images/lojas/nikids.png",
     benefit: ["Desconto de 10% a partir de 2 balões de gás hélio"],
-    details: "Válido somente para o produto descrito",
+    details: ["Válido somente para o produto descrito"],
   },
   {
     id: 9,
@@ -102,7 +105,7 @@ const stores = [
     color: "#9A1519",
     logo: "/images/lojas/poderoso-timao.png",
     benefit: ["Desconto de 20% em todos os produtos da loja"],
-    details: "Promoção não é válida para coleção 24/25 Nike",
+    details: ["Promoção não é válida para coleção 24/25 Nike"],
   },
   {
     id: 10,
@@ -115,7 +118,7 @@ const stores = [
       "Na Compra de um lanche Toast, ganhe 01 Mate gelado puro ou com limão 300ml",
       "Na compra de 02 Salgados, ganhe 01 Mate gelado puro (300ml) ou 01 café expresso pequeno",
     ],
-    details: "",
+    details: [],
   },
   {
     id: 11,
@@ -127,7 +130,7 @@ const stores = [
       "Desconto de 10% para compras à vista",
       "Desconto de 5% para compras parceladas",
     ],
-    details: "",
+    details: [],
   },
   {
     id: 12,
@@ -138,7 +141,7 @@ const stores = [
     benefit: [
       "Desconto de 20% em todos os produtos da loja, com parcelamento em até 10x sem juros",
     ],
-    details: "",
+    details: [],
   },
 ];
 
@@ -187,7 +190,7 @@ export default function StoresSection() {
     <section
       id="lojas"
       ref={sectionRef}
-      className="relative py-28 bg-[#B9161B] overflow-hidden"
+      className="relative py-28 overflow-hidden border-t border-[#FACA27]"
     >
       <div className="divider-red absolute top-0 left-0 right-0" />
       <div className="divider-red absolute bottom-0 left-0 right-0" />
@@ -235,6 +238,19 @@ export default function StoresSection() {
                   </li>
                 ))}
               </ul>
+
+              {store.details.length > 0 && (
+                <>
+                  <span className="w-[70%] h-px bg-[#FBC929]/70" />
+                  <ul className="list-outside text-left w-full p-6 pl-8 space-y-1">
+                    {store.details.map((detail, index) => (
+                      <li key={index} className="text-white text-sm mb-3">
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </div>
           ))}
         </div>
