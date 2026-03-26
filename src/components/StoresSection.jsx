@@ -16,11 +16,23 @@ const stores = [
     logo: "/43-graus.png",
     benefit: [
       "Desconto de 15% em todos os produtos da loja, exceto itens promocionais",
+      "10% OFF (desconto não cumulativo com outras promoções)",
     ],
     details: ["Promoção não cumulativa"],
   },
   {
     id: 2,
+    name: "Atlett",
+    initial: "A",
+    color: "#E8282E",
+    logo: "/atlett.png",
+    benefit: [
+      "15% OFF (desconto não cumulativo com outras promoções)",
+    ],
+    details: [],
+  },
+  {
+    id: 3,
     name: "Chilli Beans",
     initial: "CB",
     color: "#E8282E",
@@ -31,7 +43,7 @@ const stores = [
     details: ["Válido até 22/03/2025"],
   },
   {
-    id: 3,
+    id: 4,
     name: "Cruzeiro's Bar",
     initial: "CB",
     color: "#9A1519",
@@ -47,7 +59,16 @@ const stores = [
     ],
   },
   {
-    id: 4,
+    id: 5,
+    name: "Eli Dias",
+    initial: "E",
+    color: "#C61D22",
+    logo: "/elidias.png",
+    benefit: ["	10% OFF na compra da segunda peça"],
+    details: [],
+  },
+  {
+    id: 6,
     name: "Kidstok",
     initial: "K",
     color: "#C61D22",
@@ -56,7 +77,7 @@ const stores = [
     details: [],
   },
   {
-    id: 5,
+    id: 7,
     name: "Los",
     initial: "L",
     color: "#E8282E",
@@ -69,7 +90,7 @@ const stores = [
     details: [],
   },
   {
-    id: 6,
+    id: 8,
     name: "Lupo",
     initial: "L",
     color: "#9A1519",
@@ -78,7 +99,7 @@ const stores = [
     details: ["Desconto não cumulativo com outras promoções da loja"],
   },
   {
-    id: 7,
+    id: 9,
     name: "Mei Mei",
     initial: "MM",
     color: "#C61D22",
@@ -90,7 +111,7 @@ const stores = [
     details: [],
   },
   {
-    id: 8,
+    id: 10,
     name: "Nikids",
     initial: "N",
     color: "#E8282E",
@@ -99,7 +120,7 @@ const stores = [
     details: ["Válido somente para o produto descrito"],
   },
   {
-    id: 9,
+    id: 11,
     name: "Poderoso Timão",
     initial: "PT",
     color: "#9A1519",
@@ -108,7 +129,7 @@ const stores = [
     details: ["Promoção não é válida para coleção 24/25 Nike"],
   },
   {
-    id: 10,
+    id: 12,
     name: "Rei do Mate",
     initial: "RM",
     color: "#C61D22",
@@ -121,7 +142,7 @@ const stores = [
     details: [],
   },
   {
-    id: 11,
+    id: 13,
     name: "Renata Style",
     initial: "RS",
     color: "#E8282E",
@@ -133,7 +154,7 @@ const stores = [
     details: [],
   },
   {
-    id: 12,
+    id: 14,
     name: "World Tennis",
     initial: "WT",
     color: "#9A1519",
