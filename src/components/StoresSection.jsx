@@ -48,7 +48,7 @@ const stores = [
     name: "Mc Donalds",
     initial: "M",
     color: "#C61D22",
-    logo: "logo-mc.jpg",
+    logo: "image.png",
     benefit: ["Combo Big Mac - Lanche, batata e refrigerante De: R$ 36,50 Por: R$ 26,00", "Combo Quarteirão - Lanche, batata e refrigerante De: R$ 34,90 Por: R$ 26,00", "Combo Cheedar De: R$ 33,90 Por: R$ 26,00"],
     details: [],
   },
