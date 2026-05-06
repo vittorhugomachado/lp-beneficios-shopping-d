@@ -1,5 +1,6 @@
 export default function HeroSection() {
   return (
+    {/* Seção hero com banner */}
     <section className="relative w-full">
       {/* Desktop */}
       <img
