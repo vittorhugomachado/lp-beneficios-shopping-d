@@ -33,6 +33,41 @@ const stores = [
     ],
     details: ["Desconto não cumulativo com outras promoções"],
   },
+  {
+    id: 11,
+    name: "Chiquinho",
+    initial: "C",
+    color: "#E8282E",
+    logo: "/chiquinho-logo.png",
+    benefit: [
+      "10% OFF nos: Shake mix 300 ml, Big sundae 300 ml e Milk shake 400 ml",
+    ],
+    details: ["Cardápio selecionado"],
+  },
+  {
+    id: 12,
+    name: "Cruzeiro´s Bar",
+    initial: "C",
+    color: "#E8282E",
+    logo: "/cruzeiros-logo.png",
+    benefit: [
+      "R$69,90 Prato: Penne Espetacular ou Picanha do Dia (uma fatia) acompanhado uma sobremesa do dia e um refrigerante, suco ou água.",
+    ],
+    details: ["Cardápio selecionado"],
+  },
+  {
+    id: 10,
+    name: "Inova",
+    initial: "I",
+    color: "#E8282E",
+    logo: "/inova-logo.png",
+    benefit: [
+      "5% de desconto em qualquer plano Inova",
+      "Valor de R$ 99 na 1ª Parcela",
+      "Estacionamento gratuito nas primeiras 2h",
+    ],
+    details: ["Desconto não cumulativo com outras promoções"],
+  },
   //{
     //id: 5,
     //name: "Eli Dias",
