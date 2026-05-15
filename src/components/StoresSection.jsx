@@ -366,7 +366,10 @@ export default function StoresSection() {
               <div className="w-full flex justify-center py-3 bg-white">
                 <img src={store.logo} alt={store.name} width={145} />
               </div>
-              <h3 className="font-body text-xl font-semibold text-[#FACA27] tracking-widest uppercase">
+              <h3
+                className="font-body mx-3 text-xl font-semibold text-[#FACA27] tracking-widest uppercase"
+                style={{ paddingLeft: "13px", paddingRight: "13px" }}
+              >
                 {store.name}
               </h3>
               <ul className="list-disc list-outside text-left w-full p-6 pl-8 space-y-1">
