@@ -97,6 +97,15 @@ const stores = [
     details: [],
   },
   {
+    id: 13,
+    name: "Pappus açaí, sorvete e fondue",
+    initial: "P",
+    color: "#711C6F",
+    logo: "/pappus-logo.png",
+    benefit: ["10% desconto em açaí, sorvete e fondue (qualquer dia eu hora apresentando o cupom club d)", "15% desconto em açaí e sorvete de seg a sex (apresentando o cupom)", "R$14,99 200gr Salada de frutas"],
+    details: [],
+  },
+  {
     id: 8,
     name: "Tenis One",
     initial: "T",
