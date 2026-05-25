@@ -68,6 +68,28 @@ const stores = [
     ],
     details: ["Desconto não cumulativo com outras promoções"],
   },
+  {
+    id: 15,
+    name: "Kings",
+    initial: "I",
+    color: "#E8282E",
+    logo: "/kings-logo.png",
+    benefit: [
+      "10% de desconto em itens selecionados ",
+    ],
+    details: ["Desconto não cumulativo com outras promoções"],
+  },
+  {
+    id: 14,
+    name: "Lupo",
+    initial: "L",
+    color: "#E8282E",
+    logo: "/lupo-logo.png",
+    benefit: [
+      "10% de desconto na Lupo",
+    ],
+    details: ["Desconto não cumulativo com outras promoções"],
+  },
   //{
     //id: 5,
     //name: "Eli Dias",
