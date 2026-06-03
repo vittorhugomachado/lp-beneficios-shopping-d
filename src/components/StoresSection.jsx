@@ -135,6 +135,7 @@ const stores = [
     logo: "rei-do-mate.png",
     benefit: ["Nas compras a partir de R$ 50,00, ganhe um café expresso pequeno"],
     details: [],
+    },
   {
     id: 8,
     name: "Tenis One",
