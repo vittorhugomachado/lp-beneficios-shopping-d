@@ -127,6 +127,14 @@ const stores = [
     benefit: ["10% desconto em açaí, sorvete e fondue (qualquer dia eu hora apresentando o cupom club d)", "15% desconto em açaí e sorvete de seg a sex (apresentando o cupom)", "R$14,99 200gr Salada de frutas"],
     details: [],
   },
+    {
+    id: 16,
+    name: "Rei do Mate",
+    initial: "R",
+    color: "#C61D22",
+    logo: "rei-do-mate.png",
+    benefit: ["Nas compras a partir de R$ 50,00, ganhe um café expresso pequeno"],
+    details: [],
   {
     id: 8,
     name: "Tenis One",
