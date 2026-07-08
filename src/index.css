@@ -17,7 +17,7 @@
   }
 
   ::selection {
-    background: #c61d22;
+    background: #FA7422;
     color: #fff;
   }
 
@@ -28,7 +28,7 @@
     background: #111;
   }
   ::-webkit-scrollbar-thumb {
-    background: #c61d22;
+    background: #FA7422;
     border-radius: 9999px;
   }
 }
@@ -48,6 +48,15 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .site-bg::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.22);
   }
 
   .site-bg > * {
