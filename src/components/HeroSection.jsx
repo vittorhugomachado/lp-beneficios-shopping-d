@@ -3,13 +3,13 @@ export default function HeroSection() {
     <section className="relative w-full">
       {/* Desktop */}
       <img
-        src="/desktop.jpeg"
+        src="/desktop.png"
         alt="Shopping D"
         className="hidden sm:block w-full h-full object-cover"
       />
       {/* Mobile */}
       <img
-        src="/mobile.jpeg"
+        src="/mobile.png"
         alt="Shopping D"
         className="block sm:hidden w-full h-auto object-cover"
       />

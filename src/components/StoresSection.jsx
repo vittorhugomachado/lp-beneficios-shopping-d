@@ -28,9 +28,7 @@ const stores = [
     initial: "A",
     color: "#E8282E",
     logo: "/atlett.png",
-    benefit: [
-      "15% OFF na loja toda",
-    ],
+    benefit: ["15% OFF na loja toda"],
     details: ["Desconto não cumulativo com outras promoções"],
   },
   {
@@ -74,9 +72,7 @@ const stores = [
     initial: "I",
     color: "#E8282E",
     logo: "/kings-logo.png",
-    benefit: [
-      "10% de desconto em itens selecionados ",
-    ],
+    benefit: ["10% de desconto em itens selecionados "],
     details: ["Desconto não cumulativo com outras promoções"],
   },
   {
@@ -85,20 +81,18 @@ const stores = [
     initial: "L",
     color: "#E8282E",
     logo: "/lupo-logo.png",
-    benefit: [
-      "10% de desconto na Lupo",
-    ],
+    benefit: ["10% de desconto na Lupo"],
     details: ["Desconto não cumulativo com outras promoções"],
   },
   //{
-    //id: 5,
-    //name: "Eli Dias",
-    //initial: "E",
-    //color: "#C61D22",
-    //logo: "/elidias.png",
-    // benefit: ["10% OFF na compra da segunda peça"],
-    //benefit: ["10% OFF na compra da segunda peça"],
-    //details: ["Desconto não cumulativo com outras promoções"],
+  //id: 5,
+  //name: "Eli Dias",
+  //initial: "E",
+  //color: "#C61D22",
+  //logo: "/elidias.png",
+  // benefit: ["10% OFF na compra da segunda peça"],
+  //benefit: ["10% OFF na compra da segunda peça"],
+  //details: ["Desconto não cumulativo com outras promoções"],
   //},
   {
     id: 6,
@@ -106,7 +100,11 @@ const stores = [
     initial: "M",
     color: "#C61D22",
     logo: "image.png",
-    benefit: ["Combo Big Mac - Lanche, batata e refrigerante De: R$ 36,50 Por: R$ 26,00", "Combo Quarteirão - Lanche, batata e refrigerante De: R$ 34,90 Por: R$ 26,00", "Combo Cheedar De: R$ 33,90 Por: R$ 26,00"],
+    benefit: [
+      "Combo Big Mac - Lanche, batata e refrigerante De: R$ 36,50 Por: R$ 26,00",
+      "Combo Quarteirão - Lanche, batata e refrigerante De: R$ 34,90 Por: R$ 26,00",
+      "Combo Cheedar De: R$ 33,90 Por: R$ 26,00",
+    ],
     details: [],
   },
   {
@@ -124,25 +122,34 @@ const stores = [
     initial: "P",
     color: "#711C6F",
     logo: "/pappus-logo.png",
-    benefit: ["10% desconto em açaí, sorvete e fondue (qualquer dia eu hora apresentando o cupom club d)", "15% desconto em açaí e sorvete de seg a sex (apresentando o cupom)", "R$14,99 200gr Salada de frutas"],
+    benefit: [
+      "10% desconto em açaí, sorvete e fondue (qualquer dia eu hora apresentando o cupom club d)",
+      "15% desconto em açaí e sorvete de seg a sex (apresentando o cupom)",
+      "R$14,99 200gr Salada de frutas",
+    ],
     details: [],
   },
-    {
+  {
     id: 16,
     name: "Rei do Mate",
     initial: "R",
     color: "#C61D22",
     logo: "rei-do-mate.png",
-    benefit: ["Nas compras a partir de R$ 50,00, ganhe um café expresso pequeno"],
+    benefit: [
+      "Nas compras a partir de R$ 50,00, ganhe um café expresso pequeno",
+    ],
     details: [],
-    },
+  },
   {
     id: 8,
     name: "Tenis One",
     initial: "T",
     color: "#C61D22",
     logo: "logo-tenis-one.jpg",
-    benefit: ["10% OFF em compras a partir de R$ 100,00 - crédito", "15% OFF no pix ou débito"],
+    benefit: [
+      "10% OFF em compras a partir de R$ 100,00 - crédito",
+      "15% OFF no pix ou débito",
+    ],
     details: [],
   },
   {
@@ -361,8 +368,8 @@ export default function StoresSection() {
       ref={sectionRef}
       className="relative py-28 overflow-hidden border-t border-[#FACA27]"
     >
-      <div className="divider-red absolute top-0 left-0 right-0" />
-      <div className="divider-red absolute bottom-0 left-0 right-0" />
+      <div className="divider-yellow absolute top-0 left-0 right-0" />
+      <div className="divider-yellow absolute bottom-0 left-0 right-0" />
 
       {/* Subtle bg glow */}
       <div
@@ -394,8 +401,13 @@ export default function StoresSection() {
               style={fadeStyle()}
               className="store-card rounded-2xl flex flex-col items-center justify-start gap-3 overflow-hidden"
             >
-              <div className="w-full flex justify-center py-3 bg-white">
-                <img src={store.logo} alt={store.name} width={145} />
+              <div className="w-full h-44 flex justify-center py-3 bg-white">
+                <img
+                  src={store.logo}
+                  alt={store.name}
+                  width={145}
+                  className="h-full object-contain"
+                />
               </div>
               <h3
                 className="font-body mx-3 text-xl font-semibold text-[#FACA27] tracking-widest uppercase"

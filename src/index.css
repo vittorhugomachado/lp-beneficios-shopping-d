@@ -34,6 +34,33 @@
 }
 
 @layer utilities {
+  .site-bg {
+    isolation: isolate;
+  }
+
+  .site-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("/bg-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .site-bg > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @media (max-width: 767px) {
+    .site-bg::before {
+      background-image: url("/bg-mobile.png");
+    }
+  }
+
   .text-gradient-red {
     background: linear-gradient(
       135deg,
@@ -82,7 +109,7 @@
   }
 
   .btn-red {
-    background: #c61d22;
+    background: #FA7422;
     color: #fff;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -108,14 +135,14 @@
     transform: translateX(100%);
   }
   .btn-red:hover {
-    background: #e8282e;
-    box-shadow: 0 0 40px rgba(198, 29, 34, 0.45);
+    background: #FA7422;
+    box-shadow: 0 0 40px rgba(250, 116, 34, 0.45);
   }
 
   .btn-outline-red {
     background: transparent;
-    color: #c61d22;
-    border: 1px solid rgba(198, 29, 34, 0.45);
+    color: #FA7422;
+    border: 1px solid rgba(250, 116, 34, 0.45);
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -123,7 +150,7 @@
   }
   .btn-outline-red:hover {
     background: rgba(198, 29, 34, 0.08);
-    border-color: #c61d22;
+    border-color: #FA7422;
   }
 
   .input-red {
@@ -145,12 +172,12 @@
     background: rgba(198, 29, 34, 0.04);
   }
 
-  .divider-red {
+  .divider-yellow {
     height: 1px;
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(198, 29, 34, 0.4),
+      rgba(255, 222, 23, 0.4),
       transparent
     );
   }
@@ -165,8 +192,10 @@ select.input-red option {
   color: #111111;
 }
 
-::-webkit-scrollbar-thumb { background: #FFD100; border-radius: 9999px; }
-
+::-webkit-scrollbar-thumb {
+  background: #ffd100;
+  border-radius: 9999px;
+}
 
 @keyframes shimmer {
   0% {

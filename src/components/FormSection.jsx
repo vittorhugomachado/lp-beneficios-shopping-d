@@ -43,9 +43,9 @@ function Field({ label, name, type = "text", placeholder, register, error }) {
           {...register(name)}
           className={`
             w-full px-4 py-3.5 font-body text-sm rounded-xl text-black
-            ${error ? "border-red-500/70 focus:border-red-500 focus:shadow-none" : ""}
+            ${error ? "border-yellow-600 focus:border-yellow-600 focus:shadow-none" : ""}
           `}
-          style={error ? { borderColor: "rgba(239,68,68,0.7)" } : {}}
+          style={error ? { borderColor: "rgba(255, 222, 23)" } : {}}
         />
         {error && (
           <div className="absolute right-3 top-1/2 -translate-y-1/2 text-red-400">
@@ -147,16 +147,16 @@ export default function FormSection() {
     <section
       id="formulario"
       ref={sectionRef}
-      className="relative py-28 overflow-hidden border-t border-red-600/80"
+      className="relative py-28 overflow-hidden border-t border-yellow-600/80"
     >
-      <div className="divider-red absolute top-0 left-0 right-0" />
+      <div className="divider-yellow absolute top-0 left-0 right-0" />
 
       {/* bg accents */}
       <div
         className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse, rgba(198,29,34,0.06) 0%, transparent 70%)",
+            "radial-gradient(ellipse, rgba(255, 222, 23,0.06) 0%, transparent 70%)",
         }}
       />
       <div
