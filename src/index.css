@@ -17,7 +17,7 @@
   }
 
   ::selection {
-    background: #FA7422;
+    background: #fa7422;
     color: #fff;
   }
 
@@ -28,7 +28,7 @@
     background: #111;
   }
   ::-webkit-scrollbar-thumb {
-    background: #FA7422;
+    background: #fa7422;
     border-radius: 9999px;
   }
 }
@@ -44,7 +44,7 @@
     inset: 0;
     z-index: 0;
     pointer-events: none;
-    background-image: url("/bg-desktop.png");
+    background-image: url("/bg-desktop.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@
   }
 
   .btn-red {
-    background: #FA7422;
+    background: #fa7422;
     color: #fff;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -144,13 +144,13 @@
     transform: translateX(100%);
   }
   .btn-red:hover {
-    background: #FA7422;
+    background: #fa7422;
     box-shadow: 0 0 40px rgba(250, 116, 34, 0.45);
   }
 
   .btn-outline-red {
     background: transparent;
-    color: #FA7422;
+    color: #fa7422;
     border: 1px solid rgba(250, 116, 34, 0.45);
     font-weight: 500;
     letter-spacing: 0.12em;
@@ -159,7 +159,7 @@
   }
   .btn-outline-red:hover {
     background: rgba(198, 29, 34, 0.08);
-    border-color: #FA7422;
+    border-color: #fa7422;
   }
 
   .input-red {
