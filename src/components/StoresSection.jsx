@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react";
+﻿import { useEffect, useRef } from "react";
 
 // ============================================================
-//  LOJAS DO SHOPPING D — 9 itens
+//  LOJAS DO SHOPPING D â€” 9 itens
 //  Substitua `logo` por um caminho de imagem real: '/logos/loja-x.png'
 //  ou use uma URL externa.
-//  O campo `color` é a cor de destaque do placeholder;
+//  O campo `color` Ã© a cor de destaque do placeholder;
 //  pode ser removido quando o logo real for usado.
 // ============================================================
 
@@ -17,10 +17,10 @@ const stores = [
     logo: "/43-graus.png",
     // benefit: [
     //   "Desconto de 15% em todos os produtos da loja, exceto itens promocionais",
-    //   "10% OFF (desconto não cumulativo com outras promoções)",
+    //   "10% OFF (desconto nÃ£o cumulativo com outras promoÃ§Ãµes)",
     // ],
     benefit: ["10% OFF na loja toda"],
-    details: ["Desconto não cumulativo com outras promoções"],
+    details: ["Desconto nÃ£o cumulativo com outras promoÃ§Ãµes"],
   },
   {
     id: 2,
@@ -29,60 +29,7 @@ const stores = [
     color: "#E8282E",
     logo: "/atlett.png",
     benefit: ["15% OFF na loja toda"],
-    details: ["Desconto não cumulativo com outras promoções"],
-  },
-  {
-    id: 11,
-    name: "Chiquinho",
-    initial: "C",
-    color: "#E8282E",
-    logo: "/chiquinho-logo.png",
-    benefit: [
-      "10% OFF nos: Shake mix 300 ml, Big sundae 300 ml e Milk shake 400 ml",
-    ],
-    details: ["Cardápio selecionado"],
-  },
-  {
-    id: 12,
-    name: "Cruzeiro´s Bar",
-    initial: "C",
-    color: "#E8282E",
-    logo: "/cruzeiros-logo.png",
-    benefit: [
-      "R$69,90 Prato: Penne Espetacular ou Picanha do Dia (uma fatia) acompanhado uma sobremesa do dia e um refrigerante, suco ou água.",
-    ],
-    details: ["Cardápio selecionado"],
-  },
-  {
-    id: 10,
-    name: "Inova",
-    initial: "I",
-    color: "#E8282E",
-    logo: "/inova-logo.png",
-    benefit: [
-      "5% de desconto em qualquer plano Inova",
-      "Valor de R$ 99 na 1ª Parcela",
-      "Estacionamento gratuito nas primeiras 2h",
-    ],
-    details: ["Desconto não cumulativo com outras promoções"],
-  },
-  {
-    id: 15,
-    name: "Kings",
-    initial: "I",
-    color: "#E8282E",
-    logo: "/kings-logo.png",
-    benefit: ["10% de desconto em itens selecionados "],
-    details: ["Desconto não cumulativo com outras promoções"],
-  },
-  {
-    id: 14,
-    name: "Lupo",
-    initial: "L",
-    color: "#E8282E",
-    logo: "/lupo-logo.png",
-    benefit: ["10% de desconto na Lupo"],
-    details: ["Desconto não cumulativo com outras promoções"],
+    details: ["Desconto nÃ£o cumulativo com outras promoÃ§Ãµes"],
   },
   //{
   //id: 5,
@@ -90,9 +37,9 @@ const stores = [
   //initial: "E",
   //color: "#C61D22",
   //logo: "/elidias.png",
-  // benefit: ["10% OFF na compra da segunda peça"],
-  //benefit: ["10% OFF na compra da segunda peça"],
-  //details: ["Desconto não cumulativo com outras promoções"],
+  // benefit: ["10% OFF na compra da segunda peÃ§a"],
+  //benefit: ["10% OFF na compra da segunda peÃ§a"],
+  //details: ["Desconto nÃ£o cumulativo com outras promoÃ§Ãµes"],
   //},
   {
     id: 6,
@@ -102,7 +49,7 @@ const stores = [
     logo: "image.png",
     benefit: [
       "Combo Big Mac - Lanche, batata e refrigerante De: R$ 36,50 Por: R$ 26,00",
-      "Combo Quarteirão - Lanche, batata e refrigerante De: R$ 34,90 Por: R$ 26,00",
+      "Combo QuarteirÃ£o - Lanche, batata e refrigerante De: R$ 34,90 Por: R$ 26,00",
       "Combo Cheedar De: R$ 33,90 Por: R$ 26,00",
     ],
     details: [],
@@ -118,13 +65,13 @@ const stores = [
   },
   {
     id: 13,
-    name: "Pappus açaí, sorvete e fondue",
+    name: "Pappus aÃ§aÃ­, sorvete e fondue",
     initial: "P",
     color: "#711C6F",
     logo: "/pappus-logo.png",
     benefit: [
-      "10% desconto em açaí, sorvete e fondue (qualquer dia eu hora apresentando o cupom club d)",
-      "15% desconto em açaí e sorvete de seg a sex (apresentando o cupom)",
+      "10% desconto em aÃ§aÃ­, sorvete e fondue (qualquer dia eu hora apresentando o cupom club d)",
+      "15% desconto em aÃ§aÃ­ e sorvete de seg a sex (apresentando o cupom)",
       "R$14,99 200gr Salada de frutas",
     ],
     details: [],
@@ -136,7 +83,7 @@ const stores = [
     color: "#C61D22",
     logo: "rei-do-mate.png",
     benefit: [
-      "Nas compras a partir de R$ 50,00, ganhe um café expresso pequeno",
+      "Nas compras a partir de R$ 50,00, ganhe um cafÃ© expresso pequeno",
     ],
     details: [],
   },
@@ -147,8 +94,8 @@ const stores = [
     color: "#C61D22",
     logo: "logo-tenis-one.jpg",
     benefit: [
-      "10% OFF em compras a partir de R$ 100,00 - crédito",
-      "15% OFF no pix ou débito",
+      "10% OFF em compras a partir de R$ 100,00 - crÃ©dito",
+      "15% OFF no pix ou dÃ©bito",
     ],
     details: [],
   },
@@ -159,7 +106,7 @@ const stores = [
     color: "#C61D22",
     logo: "logo-vestipijamas.jpeg",
     benefit: ["15% para compras a partir de R$ 250"],
-    details: ["Desconto não cumulativo com outras promoções"],
+    details: ["Desconto nÃ£o cumulativo com outras promoÃ§Ãµes"],
   },
 ];
 // const stores = [
@@ -171,9 +118,9 @@ const stores = [
 //     logo: "/43-graus.png",
 //     benefit: [
 //       "Desconto de 15% em todos os produtos da loja, exceto itens promocionais",
-//       "10% OFF (desconto não cumulativo com outras promoções)",
+//       "10% OFF (desconto nÃ£o cumulativo com outras promoÃ§Ãµes)",
 //     ],
-//     details: ["Promoção não cumulativa"],
+//     details: ["PromoÃ§Ã£o nÃ£o cumulativa"],
 //   },
 //   {
 //     id: 2,
@@ -182,7 +129,7 @@ const stores = [
 //     color: "#E8282E",
 //     logo: "/atlett.png",
 //     benefit: [
-//       "15% OFF (desconto não cumulativo com outras promoções)",
+//       "15% OFF (desconto nÃ£o cumulativo com outras promoÃ§Ãµes)",
 //     ],
 //     details: [],
 //   },
@@ -193,9 +140,9 @@ const stores = [
 //     color: "#E8282E",
 //     logo: "/chilli-beans.png",
 //     benefit: [
-//       "Desconto de 15% exceto produtos promocionais (Óculos solar, Relógios, Armação e Lente de Grau)",
+//       "Desconto de 15% exceto produtos promocionais (Ã“culos solar, RelÃ³gios, ArmaÃ§Ã£o e Lente de Grau)",
 //     ],
-//     details: ["Válido até 22/03/2025"],
+//     details: ["VÃ¡lido atÃ© 22/03/2025"],
 //   },
 //   {
 //     id: 4,
@@ -204,13 +151,13 @@ const stores = [
 //     color: "#9A1519",
 //     logo: "/cruzeiros-bar.png",
 //     benefit: [
-//       "Promoção 1 - Prato Principal + sobremesa do dia + bebida não alcoólica por R$ 60,00 (Opções: Prato São Paulo, Filé de Frango ou Penne Espetacular)",
-//       "Promoção 2 - Na compra de um prato executivo, ganhe uma bebida não alcoólica",
-//       "Válido de segunda a quinta das 11:30 às 16:00",
+//       "PromoÃ§Ã£o 1 - Prato Principal + sobremesa do dia + bebida nÃ£o alcoÃ³lica por R$ 60,00 (OpÃ§Ãµes: Prato SÃ£o Paulo, FilÃ© de Frango ou Penne Espetacular)",
+//       "PromoÃ§Ã£o 2 - Na compra de um prato executivo, ganhe uma bebida nÃ£o alcoÃ³lica",
+//       "VÃ¡lido de segunda a quinta das 11:30 Ã s 16:00",
 //     ],
 //     details: [
-//       "Válido de segunda a quinta das 11h30 às 16h até 05/04/2025. Promoção não acumulativa",
-//       "Promoção não cumulativa",
+//       "VÃ¡lido de segunda a quinta das 11h30 Ã s 16h atÃ© 05/04/2025. PromoÃ§Ã£o nÃ£o acumulativa",
+//       "PromoÃ§Ã£o nÃ£o cumulativa",
 //     ],
 //   },
 //   {
@@ -219,7 +166,7 @@ const stores = [
 //     initial: "E",
 //     color: "#C61D22",
 //     logo: "/elidias.png",
-//     benefit: ["	10% OFF na compra da segunda peça"],
+//     benefit: ["	10% OFF na compra da segunda peÃ§a"],
 //     details: [],
 //   },
 //   {
@@ -238,8 +185,8 @@ const stores = [
 //     color: "#E8282E",
 //     logo: "/los.png",
 //     benefit: [
-//       "Primeira hora de Lan House grátis",
-//       "Desconto de 35% na compra da coleção vintage Team One",
+//       "Primeira hora de Lan House grÃ¡tis",
+//       "Desconto de 35% na compra da coleÃ§Ã£o vintage Team One",
 //       "Desconto de 25% na Lan House",
 //     ],
 //     details: [],
@@ -251,7 +198,7 @@ const stores = [
 //     color: "#9A1519",
 //     logo: "/lupo.png",
 //     benefit: ["Desconto de 10% em todas as compras"],
-//     details: ["Desconto não cumulativo com outras promoções da loja"],
+//     details: ["Desconto nÃ£o cumulativo com outras promoÃ§Ãµes da loja"],
 //   },
 //   {
 //     id: 9,
@@ -271,17 +218,17 @@ const stores = [
 //     initial: "N",
 //     color: "#E8282E",
 //     logo: "/nikids.png",
-//     benefit: ["Desconto de 10% a partir de 2 balões de gás hélio"],
-//     details: ["Válido somente para o produto descrito"],
+//     benefit: ["Desconto de 10% a partir de 2 balÃµes de gÃ¡s hÃ©lio"],
+//     details: ["VÃ¡lido somente para o produto descrito"],
 //   },
 //   {
 //     id: 11,
-//     name: "Poderoso Timão",
+//     name: "Poderoso TimÃ£o",
 //     initial: "PT",
 //     color: "#9A1519",
 //     logo: "/poderoso-timao.png",
 //     benefit: ["Desconto de 20% em todos os produtos da loja"],
-//     details: ["Promoção não é válida para coleção 24/25 Nike"],
+//     details: ["PromoÃ§Ã£o nÃ£o Ã© vÃ¡lida para coleÃ§Ã£o 24/25 Nike"],
 //   },
 //   {
 //     id: 12,
@@ -290,9 +237,9 @@ const stores = [
 //     color: "#C61D22",
 //     logo: "/rei-do-mate.png",
 //     benefit: [
-//       "Na compra de um açaí do seu jeito de 500 ml ganhe uma água Cristal 500 ml",
-//       "Na Compra de um lanche Toast, ganhe 01 Mate gelado puro ou com limão 300ml",
-//       "Na compra de 02 Salgados, ganhe 01 Mate gelado puro (300ml) ou 01 café expresso pequeno",
+//       "Na compra de um aÃ§aÃ­ do seu jeito de 500 ml ganhe uma Ã¡gua Cristal 500 ml",
+//       "Na Compra de um lanche Toast, ganhe 01 Mate gelado puro ou com limÃ£o 300ml",
+//       "Na compra de 02 Salgados, ganhe 01 Mate gelado puro (300ml) ou 01 cafÃ© expresso pequeno",
 //     ],
 //     details: [],
 //   },
@@ -303,7 +250,7 @@ const stores = [
 //     color: "#E8282E",
 //     logo: "/renata-style.png",
 //     benefit: [
-//       "Desconto de 10% para compras à vista",
+//       "Desconto de 10% para compras Ã  vista",
 //       "Desconto de 5% para compras parceladas",
 //     ],
 //     details: [],
@@ -315,7 +262,7 @@ const stores = [
 //     color: "#9A1519",
 //     logo: "/world-tennis.png",
 //     benefit: [
-//       "Desconto de 20% em todos os produtos da loja, com parcelamento em até 10x sem juros",
+//       "Desconto de 20% em todos os produtos da loja, com parcelamento em atÃ© 10x sem juros",
 //     ],
 //     details: [],
 //   },
