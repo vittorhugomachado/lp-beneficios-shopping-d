@@ -9,7 +9,7 @@ export default function HeroSection() {
       />
       {/* Mobile */}
       <img
-        src="/mobile.png"
+        src="/mobile.jpeg"
         alt="Shopping D"
         className="block sm:hidden w-full h-auto object-cover"
       />
