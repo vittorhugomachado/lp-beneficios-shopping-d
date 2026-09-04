@@ -26,7 +26,7 @@ const stores = [
     color: "#E8282E",
     logo: "/cruzeiros.jpg",
     benefit: ["R$69,90 Prato: Penne Espetacular ou Picanha do Dia (uma fatia) acompanhado uma sobremesa do dia e um refrigerante, suco ou água"],
-    details: [""],
+    details: [],
   },
   {
     id: 4,
@@ -136,7 +136,7 @@ const stores = [
     color: "#C61D22",
     logo: "logo-vestipijamas.jpeg",
     benefit: ["15% de desconto para compras a partir de R$ 250"],
-    details: ["Desconto nÃ£o cumulativo com outras promoções"],
+    details: ["Desconto não cumulativo com outras promoções"],
   },
   {
     id: 15,
