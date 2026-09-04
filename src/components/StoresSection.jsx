@@ -86,7 +86,7 @@ const stores = [
   },
   {
     id: 10,
-    name: "Nikids",
+    name: "Nikids Doces",
     initial: "N",
     color: "#C61D22",
     logo: "/nikids.png",
@@ -123,10 +123,7 @@ const stores = [
     initial: "T",
     color: "#C61D22",
     logo: "logo-tenis-one.jpg",
-    benefit: [
-      "10% de desconto no crédito, 15% no PIX e no débito",
-      ,
-    ],
+    benefit: ["10% de desconto no crédito, 15% no PIX e no débito"],
     details: ["Os 10% de desconto são válidos inclusive para os tênis que já estão em promoção"],
   },
   {
