@@ -33,7 +33,7 @@ const stores = [
     name: "Chiquinho Sorvetes",
     initial: "A",
     color: "#E8282E",
-    logo: "/inova.png",
+    logo: "/chiquinho-logo.png",
     benefit: ["10% de desconto em todos os produtos de copo"],
     details: ["Exceto para as linhas Casquinhas, Cascões, Produtos Sazonais e Adicionais"],
   },
