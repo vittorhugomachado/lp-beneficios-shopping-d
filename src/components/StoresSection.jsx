@@ -61,8 +61,8 @@ const stores = [
     initial: "A",
     color: "#E8282E",
     logo: "/feliz-farma.webp",
-    benefit: ["R$10,00 reais de desconto para compras a partir de R$79,90"],
-    details: ["Desconto não cumulativo com outras promoções"],
+    benefit: ["10% de desconto"],
+    details: ["com produtos selecionados"],
   },
   {
     id: 8,
