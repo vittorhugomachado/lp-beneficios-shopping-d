@@ -20,15 +20,6 @@ const stores = [
     details: ["Desconto não cumulativo com outras promoções"],
   },
   {
-    id: 3,
-    name: "Cruzeiros´s Bar",
-    initial: "C",
-    color: "#E8282E",
-    logo: "/cruzeiros.jpg",
-    benefit: ["R$69,90 Prato: Penne Espetacular ou Picanha do Dia (uma fatia) acompanhado uma sobremesa do dia e um refrigerante, suco ou água"],
-    details: [],
-  },
-  {
     id: 4,
     name: "Chiquinho Sorvetes",
     initial: "A",
