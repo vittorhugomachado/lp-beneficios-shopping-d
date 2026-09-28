@@ -361,6 +361,14 @@ export default function FormSection() {
                     "Cadastrar"
                   )}
                 </button>
+                <a
+  href="/regulamento-clube-d.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="self-center inline-flex items-center justify-center px-4 py-1.5 mt-1 border border-black/30 rounded-lg font-body text-[10px] font-medium text-black hover:bg-black/5"
+>
+  Regulamento
+</a>
               </>
             )}
 
