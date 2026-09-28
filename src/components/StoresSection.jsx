@@ -29,6 +29,17 @@ const stores = [
     details: ["Exceto para as linhas Casquinhas, Cascões, Produtos Sazonais e Adicionais"],
   },
   {
+  id: 16,
+  name: "H Cases Presentes",
+  initial: "H",
+  color: "#C61D22",
+  logo: "/h_cases_presentes.png",
+  benefit: [
+    "Nas compras a partir de R$ 250,00, ganhe 1 Funko Pop ou 1 resina tamanho P",
+  ],
+  details: [],
+},
+  {
     id: 5,
     name: "Inova",
     initial: "A",
@@ -135,18 +146,7 @@ const stores = [
     benefit: ["Cashback de 20%"],
     details: ["Desconto não cumulativo com outras promoções"],
   },
-  {
-  id: 16,
-  name: "H Cases Presentes",
-  initial: "H",
-  color: "#C61D22",
-  logo: "/h_cases_presentes.png",
-  benefit: [
-    "Nas compras a partir de R$ 250,00, ganhe 1 Funko Pop ou 1 resina tamanho P",
-  ],
-  details: [],
-},
-];
+  ];
 
 export default function StoresSection() {
   const sectionRef = useRef(null);
