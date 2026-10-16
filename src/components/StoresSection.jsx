@@ -129,15 +129,6 @@ const stores = [
     details: ["Os 10% de desconto são válidos inclusive para os tênis que já estão em promoção"],
   },
   {
-    id: 14,
-    name: "Vestipijamas",
-    initial: "V",
-    color: "#C61D22",
-    logo: "logo-vestipijamas.jpeg",
-    benefit: ["15% de desconto para compras a partir de R$ 250"],
-    details: ["Desconto não cumulativo com outras promoções"],
-  },
-  {
     id: 15,
     name: "World Tennis",
     initial: "W",
