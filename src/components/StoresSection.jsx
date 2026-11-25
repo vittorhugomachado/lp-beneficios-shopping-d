@@ -184,7 +184,7 @@ export default function StoresSection() {
     <section
       id="lojas"
       ref={sectionRef}
-      className="relative py-28 overflow-hidden border-t border-[#FACA27]"
+      className="relative py-28 overflow-hidden border-t border-[#FF5A1F]"
     >
       <div className="divider-yellow absolute top-0 left-0 right-0" />
       <div className="divider-yellow absolute bottom-0 left-0 right-0" />
@@ -228,7 +228,7 @@ export default function StoresSection() {
                 />
               </div>
               <h3
-                className="font-body mx-3 text-xl font-semibold text-[#FACA27] tracking-widest uppercase"
+                className="font-body mx-3 text-xl font-semibold text-[#FF5A1F] tracking-widest uppercase"
                 style={{ paddingLeft: "13px", paddingRight: "13px" }}
               >
                 {store.name}
@@ -243,7 +243,7 @@ export default function StoresSection() {
 
               {store.details.length > 0 && (
                 <>
-                  <span className="w-[70%] h-px bg-[#FBC929]/70" />
+                  <span className="w-[70%] h-px bg-[#FF5A1F]/70" />
                   <ul className="list-outside text-left w-full p-6 pl-8 space-y-1">
                     {store.details.map((detail, index) => (
                       <li key={index} className="text-white text-sm mb-3">
