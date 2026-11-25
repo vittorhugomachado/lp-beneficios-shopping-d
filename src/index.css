@@ -17,7 +17,7 @@
   }
 
   ::selection {
-    background: #fa7422;
+    background: #FF5A1F;
     color: #fff;
   }
 
@@ -28,7 +28,7 @@
     background: #111;
   }
   ::-webkit-scrollbar-thumb {
-    background: #fa7422;
+    background: #FF5A1F;
     border-radius: 9999px;
   }
 }
@@ -101,7 +101,7 @@
   }
 
   .btn-red {
-    background: #fa7422;
+    background: #FF5A1F;
     color: #fff;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -127,13 +127,13 @@
     transform: translateX(100%);
   }
   .btn-red:hover {
-    background: #fa7422;
+    background: #FF5A1F;
     box-shadow: 0 0 40px rgba(250, 116, 34, 0.45);
   }
 
   .btn-outline-red {
     background: transparent;
-    color: #fa7422;
+    color: #FF5A1F;
     border: 1px solid rgba(250, 116, 34, 0.45);
     font-weight: 500;
     letter-spacing: 0.12em;
@@ -142,7 +142,7 @@
   }
   .btn-outline-red:hover {
     background: rgba(198, 29, 34, 0.08);
-    border-color: #fa7422;
+    border-color: #FF5A1F;
   }
 
   .input-red {
