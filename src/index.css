@@ -53,12 +53,11 @@
   }
 
   .text-gradient-red {
-    background: linear-gradient(
-      135deg,
-      #fdc933 0%,
-      hsl(45, 64%, 51%) 45%,
-      #9c7d21 70%,
-      #fdc933 100%
+  background: linear-gradient(
+    135deg,
+    #FF7A3D 0%,
+    #FF5A1F 50%,
+    #E94310 100%
     );
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -169,7 +168,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(255, 222, 23, 0.4),
+      rgba(255, 90, 31, 0.5),
       transparent
     );
   }
